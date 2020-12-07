@@ -4,5 +4,38 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
 <mapper namespace="mappers.board-mapper">
+	<!-- 전체보기 -->
+	<select id="listAll" resultType="BoardVo">
+		select * from tbl_board
+		order by board_bno desc
+	</select>
+	
+	<!-- 글쓰기 -->
+	<insert id="write">
+		insert into tbl_board(board_bno, board_title, board_content, board_writer, board_date)
+		values(SQL_BOARD_BNO.nextval, #{board_title}, #{board_content}, #{board_writer}, sysdate)
+	</insert>
+	
+	<!-- 해당 글 보기 -->
+	<select id="selectByBno" resultType="BoardVo">
+		select * from tbl_board
+		where board_bno = #{board_bno}
+	</select>
+	
+	<!-- 수정하기 -->
+	<update id="modify">
+		update tbl_board set
+		board_title = #{board_title},
+		board_content = #{board_content},
+		board_writer = #{board_writer},
+		board_date = sysdate
+		where board_bno = #{board_bno}
+	</update>
+	
+	<!-- 삭제하기 -->
+	<delete id="delete">
+		delete from tbl_board
+		where board_bno = #{board_bno}
+	</delete>
 
 </mapper>

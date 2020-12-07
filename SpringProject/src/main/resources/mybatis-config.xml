@@ -6,7 +6,7 @@
 <configuration>
 	<typeAliases>
 		<!-- 클래스 단위 -->
-<!-- 		<typeAlias type="com.kh.sample01.domain.MemberVo" alias="MemberVo"/> -->
+		<typeAlias type="com.kdh.spring.domain.BoardVo" alias="BoardVo"/>
 
 		<!-- 패키지 단위 -->
 		<package name="com.kdh.spring.domain"/>
