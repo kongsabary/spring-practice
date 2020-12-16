@@ -24,7 +24,7 @@
 				<div class="col-md-2">
 				</div>
 				<div class="col-md-8">
-					<form role="form" action="/board/writePOST" method="post" accept-charset="utf-8">
+					<form role="form" action="/board/writePOST" method="post">
 						<div class="form-group">
 							<label for="board_title">글제목</label>
 							<input type="text" class="form-control" id="board_title" name="board_title" />
