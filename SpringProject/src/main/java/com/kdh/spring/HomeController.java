@@ -16,12 +16,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Handles requests for the application home page.
  */
+@SuppressWarnings("unused")
 @Controller
 public class HomeController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
-		return "/board/listAll";
+		return "/main/main";
 	}
 	
 }
