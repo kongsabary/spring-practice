@@ -9,107 +9,85 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/css/style.css">
 <title>메인화면</title>
-<style>
-.mainImage {
-	width: 100%;
-	height: 400px;
-	margin-top: 50px; 
-}
-
-#navbar-user {
-	font-size: small;
-	
-}
-
-#navbarDropdownMenuLink {
-	color: black;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 300px 300px 300px 300px;
-}
-</style>
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid contents-wrap">
+	<header>
+	<!-- header -->
+		<div class="row" style="background-color: black;">
+			<div class="col-md-12" style="margin-top: 10px;">
+				<ul class="nav justify-content-end" style="margin-right: 200px;">
+					<li class="nav-item">
+						<a class="nav-link" href="#" style="font-size: 20px;">LOGIN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" style="font-size: 20px;">JOIN</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- 상단 브랜드명 -->
+		<div class="row">
+			<div class="col-md-12" style="margin top: 80px; margin-top: 21px; margin-bottom: 21px; text-align: center; font-size: 100px;">
+				maskdays
+			</div>
+		</div>	
+		
+		<!-- Navbar -->
+		<div class="row">
+			<div class="col-md-12">
+				<hr/>
+				<ul class="nav" style="margin top: 80px; margin-top: 21px; margin-bottom: 21px; margin-left: 150px;">
+				  	<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#" style="font-size: 18px; color: red;">Best</a>
+					</li>
+					<li class="nav-item dropdown">
+			        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							마스크
+			       		</a>
+			        	<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				            <li><a class="dropdown-item" href="#">보건용(KF94/80/AD마스크)</a></li>
+				            <li><a class="dropdown-item" href="#">어린이용마스크</a></li>
+				            <li><a class="dropdown-item" href="#">일회용마스크</a></li>
+				            <li><a class="dropdown-item" href="#">어린이용마스크</a></li>
+			        	</ul>
+				   </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#">손소독제</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#">손소독(세정)티슈</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#">마스크스트랩(줄)</a>
+				  </li>
+				</ul>
+				<hr/>
+			</div>
+		</div>
+	</header>
+	
+	<!-- 이미지 슬라이드 -->
 	<div class="row">
 		<div class="col-md-12">
-			<!-- 상단 로그인부분 -->
-			<nav style="margin-left: 1200px; position: absolute; left: 80%; margin-left: -100px;" class="navbar navbar-expand-sm navbar-light bg-light" id="navbar-user">
-				<a class="navbar-brand" href="#">LOGIN</a>
-				<a class="navbar-brand" href="#">JOIN</a>
-				<a class="navbar-brand" href="#">CART</a>
-				<a class="navbar-brand" href="#">MYPAGE</a>
-				<a class="navbar-brand" href="#">NOTICE</a>
-			</nav>
-			<!-- Navbar -->
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div style="margin-top: 100px; width: 400px; position: absolute; left: 50%; margin-left: -200px;" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<hr/>
-					<a style="color: red;" class="navbar-brand" href="#">BEST</a>
-					<ul class="navbar-nav">
-						<li class="nav-item dropdown">
-							 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">플랫/로퍼</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								 <a class="dropdown-item" href="#">플랫슈즈</a>
-								 <a class="dropdown-item" href="#">로퍼</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">부츠/워커</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								 <a class="dropdown-item" href="#">앵클부츠</a>
-								 <a class="dropdown-item" href="#">워커</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">BAG/ACC</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								 <a class="dropdown-item" href="#">샌들</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">BAG/ACC</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								 <a class="dropdown-item" href="#">가방</a>
-								 <a class="dropdown-item" href="#">슈즈악세서리</a>
-							</div>
-						</li>
-					</ul>
-<!-- 					<form class="form-inline"> -->
-<!-- 						<input class="form-control mr-sm-2" type="text" />  -->
-<!-- 						<button class="btn btn-primary my-2 my-sm-0" type="submit"> -->
-<!-- 							Search -->
-<!-- 						</button> -->
-<!-- 					</form> -->
-				</div>
-			</nav>
-			<br/>
-			<!-- 이미지 슬라이드 -->
 			<div class="carousel slide" id="carousel-61468">
 				<ol class="carousel-indicators">
 					<li data-slide-to="0" data-target="#carousel-61468" class="active">
 					</li>
 					<li data-slide-to="1" data-target="#carousel-61468">
 					</li>
-					<li data-slide-to="2" data-target="#carousel-61468">
-					</li>
 				</ol>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img class="mainImage" alt="mainImage1" src="resources/images/메인화면2.gif" />
+						<img class="mainImage" alt="mainImage1" src="resources/images/main1.png" />
 						<div class="carousel-caption">
 						</div>
 					</div>
 					<div class="carousel-item">
-						<img class="mainImage" alt="mainImage2" src="resources/images/메인화면1.jpg" />
-						<div class="carousel-caption">
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img class="mainImage" alt="mainImage3" src="resources/images/메인화면3.jpg" />
+						<img class="mainImage" alt="mainImage2" src="resources/images/main2.png" />
 						<div class="carousel-caption">
 						</div>
 					</div>
@@ -124,21 +102,51 @@
 					</a>
 			</div>
 		</div>
-		
-		<!-- 상품 사진 4장씩 prdList grid4 -->
+	</div>
+
+	<!-- 상품 사진 4장씩 prdList grid4 -->
+	<div class="row">
 		<div class="col-md-12">
-		<br/>
-			<div style="width: 400px; position: absolute; left: 30%; margin-left: -200px;" class="wrapper" id="prdList grid4">
+			<div style="width: 400px; position: absolute; left: 30%; margin-left: -245px;" class="wrapper" id="prdList grid4">
 			<c:forEach begin="1" end="8" step="1">
 		  			<div style="height: 250px; margin-right: 20px; margin-bottom: 20px;" class="thumbnail">
 			  			<div class="prd-item">
-							<img class="prdImage" alt="prdImage" src="" />
+							<img style="width: 267px; height: 243px;" class="prdImage" alt="prdImage" src="resources/images/maskImage1.png" />
 						</div>
 		  			</div>
 			</c:forEach>
 			</div>
 		</div>
+		
 	</div>
+	
+	<!-- footer -->
+	<footer class="footer">
+		<div class="row">
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-8">
+				<div>
+					<ul>
+						<li>회사소개</li>
+						<li>이용약관</li>
+						<li>이용안내</li>
+						<li>개인정보처리방침</li>
+					</ul>
+				</div>
+				<div>
+					<p>
+						상호 :마스크데이즈 업체 :(주)마스크데이즈 주소 :울산 북구 매곡동<br/>
+						대표 :공다혜 대표번호 :1994-1231 메일 :kongdh12@gmail.com<br/>
+						사업자등록번호 :485-9862-9226 통신판매업신고번호 :2021-울산북구-880X 개인정보관리자 :공다혜<br/>
+						copyright (c) maskdays.co.kr all rights reserved.<br/>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-2">
+			</div>
+		</div>
+	</footer>
 </div>
 </body>
 </html>
