@@ -14,16 +14,16 @@
 </head>
 <body>
 <div class="container-fluid contents-wrap">
-	<header>
+	<header id="header">
 	<!-- header -->
-		<div class="row" style="background-color: black;">
+		<div class="row" style="background-color: #2f2f2f;">
 			<div class="col-md-12" style="margin-top: 10px;">
 				<ul class="nav justify-content-end" style="margin-right: 200px;">
 					<li class="nav-item">
-						<a class="nav-link" href="#" style="font-size: 20px;">LOGIN</a>
+						<a class="nav-link" href="/login/login" style="font-size: 20px; color: white;">LOGIN</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" style="font-size: 20px;">JOIN</a>
+						<a class="nav-link" href="/login/join" style="font-size: 20px; color: white;">JOIN</a>
 					</li>
 				</ul>
 			</div>
@@ -31,7 +31,7 @@
 		
 		<!-- 상단 브랜드명 -->
 		<div class="row">
-			<div class="col-md-12" style="margin top: 80px; margin-top: 21px; margin-bottom: 21px; text-align: center; font-size: 100px;">
+			<div class="col-md-12" style="margin top: 80px; margin-top: 21px; margin-bottom: 21px; text-align: center; font-size: 100px; color: #2f2f2f;">
 				maskdays
 			</div>
 		</div>	
@@ -40,11 +40,11 @@
 		<div class="row">
 			<div class="col-md-12">
 				<hr/>
-				<ul class="nav" style="margin top: 80px; margin-top: 21px; margin-bottom: 21px; margin-left: 150px;">
+				<ul class="nav" style="margin-top: 21px; margin-left: 150px;">
 				  	<li class="nav-item">
 						<a class="nav-link active" aria-current="page" href="#" style="font-size: 18px; color: red;">Best</a>
 					</li>
-					<li class="nav-item dropdown">
+					<li class="nav-item dropdown productMenu">
 			        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							마스크
 			       		</a>
@@ -55,13 +55,13 @@
 				            <li><a class="dropdown-item" href="#">어린이용마스크</a></li>
 			        	</ul>
 				   </li>
-				  <li class="nav-item">
+				  <li class="nav-item productMenu">
 				    <a class="nav-link" href="#">손소독제</a>
 				  </li>
-				  <li class="nav-item">
+				  <li class="nav-item productMenu">
 				    <a class="nav-link" href="#">손소독(세정)티슈</a>
 				  </li>
-				  <li class="nav-item">
+				  <li class="nav-item productMenu">
 				    <a class="nav-link" href="#">마스크스트랩(줄)</a>
 				  </li>
 				</ul>
@@ -109,32 +109,24 @@
 		<div class="col-md-12">
 			<div style="width: 400px; position: absolute; left: 30%; margin-left: -245px;" class="wrapper" id="prdList grid4">
 			<c:forEach begin="1" end="8" step="1">
-		  			<div style="height: 250px; margin-right: 20px; margin-bottom: 20px;" class="thumbnail">
-			  			<div class="prd-item">
-							<img style="width: 267px; height: 243px;" class="prdImage" alt="prdImage" src="resources/images/maskImage1.png" />
-						</div>
-		  			</div>
+	  			<div style="height: 250px; margin-right: 20px; margin-bottom: 20px;" class="thumbnail">
+		  			<div class="prd-item">
+						<img style="width: 267px; height: 243px;" class="prdImage" alt="prdImage" src="resources/images/maskImage1.png" />
+					</div>
+	  			</div>
 			</c:forEach>
 			</div>
 		</div>
-		
 	</div>
 	
 	<!-- footer -->
-	<footer class="footer">
-		<div class="row">
+	<footer>
+		<div class="row footer">
 			<div class="col-md-2">
 			</div>
 			<div class="col-md-8">
 				<div>
-					<ul>
-						<li>회사소개</li>
-						<li>이용약관</li>
-						<li>이용안내</li>
-						<li>개인정보처리방침</li>
-					</ul>
-				</div>
-				<div>
+					<p>회사소개 | 이용약관 | 이용안내 | 개인정보처리방침</p>
 					<p>
 						상호 :마스크데이즈 업체 :(주)마스크데이즈 주소 :울산 북구 매곡동<br/>
 						대표 :공다혜 대표번호 :1994-1231 메일 :kongdh12@gmail.com<br/>
