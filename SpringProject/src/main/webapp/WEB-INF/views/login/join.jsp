@@ -26,6 +26,10 @@
 				<div class="col-md-4">
 					<form role="form" action="/login/joinPost" method="post">
 						<div class="form-group">
+							<label>이메일</label>
+							<input type="email" class="form-control" id="user_email" name="user_email"/>
+						</div>
+						<div class="form-group">
 							<label>아이디</label>
 							<input type="text" class="form-control" id="user_id" name="user_id"/>
 						</div>
@@ -35,20 +39,20 @@
 						</div>
 						<div class="form-group">
 							<label>비밀번호 재확인</label>
-							<input type="password" class="form-control" id="user_pw2" name="user_pw2"/>
+							<input type="password" class="form-control" id="user_pw2"/>
 						</div>
 						<div class="form-group">
 							<label>이름</label>
-							<input type="text" class="form-control" id="user_pw" name="user_pw"/>
+							<input type="text" class="form-control" id="user_name" name="user_name"/>
 						</div>
 						<div class="form-group">
 							<label>생년월일</label>
-							<input type="text" class="form-control" id="birth" name="birth"/>
+							<input type="text" class="form-control" id="user_birth" name="user_birth"/>
 						</div>
 						<div class="form-group">
 							<label>성별　</label>
-							<input type="radio" name="gender" id="m" value="남"/>남
-							<input type="radio" name="gender" id="f" value="여"/>여
+							<input type="radio" name="user_gender" id="user_gender" value="남"/>남
+							<input type="radio" name="user_gender" id="user_gender" value="여"/>여
 						</div>
 						<div class="form-group">
 							<label>주소<button>우편번호검색</button></label>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="mappers.user-mapper">
+	<!-- 회원가입 -->
+	<insert id="register">
+		insert into tbl_user(user_num,user_id,user_pw,user_name,user_gender,user_email,user_birth,user_address,user_point,user_join_date,user_status)
+		values(TBL_USER_BNO.nextval,#{user_id},#{user_pw},#{user_name},#{user_gender},#{user_email},#{user_birth},'#{user_address},1000,sysdate,#{user_status})
+	</insert>
+	
+	<!-- 아이디 비밀번호 조회 -->
+	<select id="login" resultType="UserVo">
+		select user_id, user_pw
+		from tbl_user
+		where user_id = #{user_id}
+		and user_pw = #{user_pw}
+	</select>
+	
+	
+</mapper>
