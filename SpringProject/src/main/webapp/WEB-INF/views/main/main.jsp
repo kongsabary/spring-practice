@@ -19,20 +19,33 @@
 		<div class="row" style="background-color: #2f2f2f;">
 			<div class="col-md-12" style="margin-top: 10px;">
 				<ul class="nav justify-content-end" style="margin-right: 200px;">
-					<li class="nav-item">
-						<a class="nav-link" href="/login/login" style="font-size: 20px; color: white;">LOGIN</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/login/join" style="font-size: 20px; color: white;">JOIN</a>
-					</li>
+					<c:if test="${login != null}">
+						<li class="nav-item">
+							<a class="nav-link" style="font-size: 20px; color: white;">[${login.user_id}]님</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/login/login" style="font-size: 20px; color: white;">MyPage</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/login/logout" style="font-size: 20px; color: white;">로그아웃</a>
+						</li>
+					</c:if>
+					<c:if test="${login == null}">
+						<li class="nav-item">
+							<a class="nav-link" href="/login/login" style="font-size: 20px; color: white;">LOGIN</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/login/join" style="font-size: 20px; color: white;">JOIN</a>
+						</li>
+					</c:if>
 				</ul>
 			</div>
 		</div>
 		
 		<!-- 상단 브랜드명 -->
 		<div class="row">
-			<div class="col-md-12" style="margin top: 80px; margin-top: 21px; margin-bottom: 21px; text-align: center; font-size: 100px; color: #2f2f2f;">
-				maskdays
+			<div class="col-md-12" style="margin top: 80px; margin-top: 21px; margin-bottom: 21px; text-align: center; font-size: 100px;">
+				<a style="color: #2f2f2f;" href="/">maskdays</a>
 			</div>
 		</div>	
 		
@@ -45,7 +58,7 @@
 						<a class="nav-link active" aria-current="page" href="#" style="font-size: 18px; color: red;">Best</a>
 					</li>
 					<li class="nav-item dropdown productMenu">
-			        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #2f2f2f;">
 							마스크
 			       		</a>
 			        	<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -56,13 +69,13 @@
 			        	</ul>
 				   </li>
 				  <li class="nav-item productMenu">
-				    <a class="nav-link" href="#">손소독제</a>
+				    <a class="nav-link" href="#" style="color: #2f2f2f;">손소독제</a>
 				  </li>
 				  <li class="nav-item productMenu">
-				    <a class="nav-link" href="#">손소독(세정)티슈</a>
+				    <a class="nav-link" href="#" style="color: #2f2f2f;">손소독(세정)티슈</a>
 				  </li>
 				  <li class="nav-item productMenu">
-				    <a class="nav-link" href="#">마스크스트랩(줄)</a>
+				    <a class="nav-link" href="#" style="color: #2f2f2f;">마스크스트랩(줄)</a>
 				  </li>
 				</ul>
 				<hr/>

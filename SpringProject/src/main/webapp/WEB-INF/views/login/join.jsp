@@ -10,12 +10,17 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="resources/css/style.css">
 <title>join</title>
+<style>
+a {
+	color: #2f2f2f;
+}
+</style>
 </head>
 <body>
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12" style="margin top: 80px; margin-top: 21px; margin-bottom: 21px; text-align: center; font-size: 100px; color: #2f2f2f;">
-			maskdays
+		<div class="col-md-12" style="margin top: 80px; margin-top: 21px; margin-bottom: 21px; text-align: center; font-size: 100px;">
+			<a href="/">maskdays</a>
 		</div>
 	</div>
 	<div class="row">
