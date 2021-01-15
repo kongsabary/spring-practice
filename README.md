@@ -16,7 +16,7 @@
 
 ## 실행화면_코로나 맵
 <div>
-<img src="" width="400"></img>
+<img src="https://user-images.githubusercontent.com/74242098/104756242-ea29f680-579e-11eb-8d51-0578cf27c33e.png" width="400"></img>
 </div>
 
 
