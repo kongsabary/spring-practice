@@ -10,7 +10,8 @@
 
 ## 실행화면_메인 화면
 <div>
-<img src="" width="400"></img>
+<img src="https://user-images.githubusercontent.com/74242098/104756784-9835a080-579f-11eb-8c82-9418ee60a1f7.png" width="400"></img>
+<img src="https://user-images.githubusercontent.com/74242098/104756776-94098300-579f-11eb-8e46-f0b79112dbdd.png" width="400"></img>
 </div>  
 <hr/>
 
