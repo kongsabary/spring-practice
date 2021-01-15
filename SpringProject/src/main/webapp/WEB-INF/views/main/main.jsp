@@ -54,6 +54,9 @@
 			<div class="col-md-12">
 				<hr/>
 				<ul class="nav" style="margin-top: 21px; margin-left: 150px;">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="/main/map" style="font-size: 18px; color: blue;">Map</a>
+					</li>
 				  	<li class="nav-item">
 						<a class="nav-link active" aria-current="page" href="#" style="font-size: 18px; color: red;">Best</a>
 					</li>

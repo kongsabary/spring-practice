@@ -12,4 +12,8 @@ public class MainController {
 	public void main() throws Exception {
 	}
 	
+	@RequestMapping(value = "map", method = RequestMethod.GET)
+	public void map() throws Exception {
+		
+	}
 }
